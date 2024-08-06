@@ -10,7 +10,6 @@ Add a "Data" folder to store the results.
 The Fisher task is a variant of the beads task probabilistic paradigm. In the beads task, participants must deduce from which of two jars a string of beads has been drawn. Typically, the jars contain beads of two colours in opposite ratios (for example, 8:2 and 2:8). A robust finding in such tasks is that people suffering from psychotic symptoms exhibit a ‘jumping-to-conclusions’ bias (that is, they make decisions based on less evidence and with increased confidence in their choice).  
 In our variant of the bead task, participants were asked to report the ‘chance’ (and not an actual decision) that a red fish caught by a fisher came from one of two lakes (left versus right lake). This adaptation makes the Fisher task well suited to test Bayesian inference and generate qualitative and quantitative model-based predictions regarding how participants integrate prior and sensory evidence to drive probabilistic reasoning.
 ![FishTask_Large-white](https://user-images.githubusercontent.com/40823809/210080105-31589ac3-cc2f-4099-b65e-c2e8386876e8.jpg)
-
 ## Procedure:  
 After presentation of a fixation cross (1), the prior information is provided (2).  
 The size of the baskets represented the chance that the fisher caught a fish from the left or right lake.  
