@@ -1,5 +1,5 @@
 ## About the Fisher Task experiment
-PsychoPy version of the Fisher task as used in Jardri et al. _Nat Commun_ 2017 (https://doi.org/10.1038/ncomms14218).
+PsychoPy version of the Fisher task as used in Jardri et al. _Nat Commun_ 2017.
 
 [![DOI:10.1038/ncomms14218](https://zenodo.org/badge/DOI/10.1038/ncomms14218.svg)](https://doi.org/10.1038/ncomms14218)
 
