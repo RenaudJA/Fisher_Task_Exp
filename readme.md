@@ -3,7 +3,7 @@ PsychoPy version of the Fisher task as used in Jardri et al. _Nat Commun_ 2017.
 
 [![DOI:10.1038/ncomms14218](https://zenodo.org/badge/DOI/10.1038/ncomms14218.svg)](https://doi.org/10.1038/ncomms14218)
 
-Tested on PsychoPy 2022.2.4, available in *French* (use fisher_task_FR.psyexp) and *English* (use fisher_task_EN.psyexp).  
+Tested on PsychoPy 2025.2.4, available in *French* (use fisher_task_FR.psyexp) and *English* (use fisher_task_EN.psyexp).  
 Add a "Data" folder to store the results.
 
 ## Context:  
