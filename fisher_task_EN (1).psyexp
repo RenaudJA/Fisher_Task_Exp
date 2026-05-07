@@ -3,10 +3,10 @@
   <Settings>
     <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
     <Param val="https://app.prolific.co/submissions/complete?cc=97F886BC" valType="str" updates="None" name="Completed URL"/>
-    <Param val="tab" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
     <Param val="u'data/%s_%s_%s' % (expInfo['participant_id'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
-    <Param val="" valType="str" updates="None" name="End Message"/>
+    <Param val="Thank you for your patience." valType="str" updates="None" name="End Message"/>
     <Param val="{'participant_id': '1'}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
     <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
@@ -254,7 +254,7 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="$'Vous pouvez faire une pause.\n\nVous avez réalisé ' + perc + '% de la tâche.\n\nAppuyez sur la barre espace lorsque vous êtes prêt à reprendre.'" valType="str" updates="set every repeat" name="text"/>
+        <Param val="$'You can take a short break to rest.\n\nYou have completed ' + perc + '% of the experiment.\n\nPress Space when you are ready to continue.'" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -300,7 +300,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Rappel: merci de ne pas presser la touche Esc.&amp;#10;Si vous le faisiez par erreur, utilisez F11 pour revenir en mode plein-écran (sous Windows)." valType="str" updates="constant" name="text"/>
+        <Param val="Reminder: Please do not press Esc at any point, because it will exit fullscreen.&amp;#10;If you do, use F11 to come back to fullscreen (Windows)." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -396,7 +396,7 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Bonjour&amp;#10;Merci d'avoir accepté de participer à cette expérience.&amp;#10;&amp;#10;Nous allons bientôt démarrer." valType="str" updates="constant" name="text"/>
+        <Param val="Hello&amp;#10;Thank you for your participation&amp;#10;&amp;#10;The experiment will begin shortly." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -423,7 +423,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Merci de ne pas presser la touche Esc, cela vous ferait sortir du mode plein-écran.&amp;#10;Si vous le faisiez par erreur, vous pouvez tenter de revenir en mode plein-écran en appuyant sur F11 (sous Windows)." valType="str" updates="constant" name="text"/>
+        <Param val="Please do not press Esc at any point, because it will exit fullscreen.&amp;#10;If you do, please try to put your browser in fullscreen again (usually by pressing F11 on Windows)." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -450,7 +450,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Appuyez sur la barre espace pour continuer" valType="str" updates="constant" name="text"/>
+        <Param val="Press Space to proceed" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -477,7 +477,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Dans cette expérience, vous allez devoir déterminer, à chaque essai, de quel lac provient le poisson rouge.&amp;#10;&amp;#10;Voilà le poisson que vient d'attraper le pêcheur." valType="str" updates="constant" name="text"/>
+        <Param val="In each trial of the experiment, you will have to determine where the *red* fish came from.&amp;#10;&amp;#10;Here is the fish just caught by the fisher." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -533,7 +533,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Mais duquel de ces deux lacs vient ce poisson ?" valType="str" updates="constant" name="text"/>
+        <Param val="But from which of the two lakes&amp;#10;did the fish come from?" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -618,7 +618,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Pour répondre, vous allez devoir combiner deux types d'information." valType="str" updates="constant" name="text"/>
+        <Param val="To answer you will have to combine two kinds of information." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -645,7 +645,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="1) Le temps que le pêcheur a passé à pêcher sur le lac de droite ou de gauche." valType="str" updates="constant" name="text"/>
+        <Param val="1) The time spent by the fisher to fish at the right or the left lake." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -672,7 +672,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Par exemple" valType="str" updates="constant" name="text"/>
+        <Param val="For example" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -757,7 +757,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Un plus grand panier de pêcheur à gauche indique que le pêcheur y a passé plus de temps que sur le lac de droite." valType="str" updates="constant" name="text"/>
+        <Param val="A larger basket on the left indicates that the fisher spent more time on the left lake than on the right." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -784,7 +784,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="2) La quantité de poissons rouges et noirs dans chaque lac." valType="str" updates="constant" name="text"/>
+        <Param val="2) The *proportions* of red and black fish in each lake." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -869,7 +869,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Ici, il y a un peu plus de poissons rouges dans le lac de gauche." valType="str" updates="constant" name="text"/>
+        <Param val="There are more red fish in the left lake." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -896,7 +896,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="En tenant compte de ces informations, à quel point êtes-vous certain que le poisson rouge vienne du lac de gauche ou du lac de droite ?" valType="str" updates="constant" name="text"/>
+        <Param val="Given this information, how confident are you that the fish came from the right or the left lake?" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -942,10 +942,10 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="mouse_2.setPos([0, (- 0.5)]);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="mouse_2.setVisible(true);&amp;#10;mouse_2.setPos([0, (- 0.5)]);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="mouse_2.setVisible(True)&amp;#10;mouse_2.setPos([0,-0.5])" valType="extendedCode" updates="constant" name="Begin Routine"/>
-        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
@@ -978,7 +978,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="howToAnswer.setAlignHoriz('center');&amp;#10;uncertain.setAlignHoriz('center');&amp;#10;answerRight.setAlignHoriz('center');&amp;#10;answerLeft.setAlignHoriz('center');&amp;#10;somewhatRight.setAlignHoriz('center');&amp;#10;somewhatLeft.setAlignHoriz('center');&amp;#10;newExample.setAlignHoriz('center');&amp;#10;asManyFish.setAlignHoriz('center');&amp;#10;whatConfidence.setAlignHoriz('center');" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
@@ -1012,7 +1012,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Pour répondre, vous utiliserez la souris pour cliquer sur une échelle semi-circulaire.&amp;#10;&amp;#10;Vous devrez être le plus rapide et précis possible." valType="str" updates="constant" name="text"/>
+        <Param val="To answer, you will have to click with your cursor on a semi-circular scale.&amp;#10;&amp;#10;You should try to be as precise and as fast as possible." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1097,7 +1097,7 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Je suis certain&amp;#10;LAC DE DROITE" valType="str" updates="constant" name="text"/>
+        <Param val="I'm sure&amp;#10;RIGHT LAKE" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1124,7 +1124,7 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Je suis certain&amp;#10;LAC DE GAUCHE" valType="str" updates="constant" name="text"/>
+        <Param val="I'm sure&amp;#10;LEFT LAKE" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1151,7 +1151,7 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Je ne sais pas" valType="str" updates="constant" name="text"/>
+        <Param val="I don't know" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1178,7 +1178,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Par exemple, si vous n'avez aucun indice, vous pouvez cliquer sur &quot;Je ne sais pas&quot;." valType="str" updates="constant" name="text"/>
+        <Param val="For example, if you are uncertain, you should click close to &quot;I don't know&quot;." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1205,7 +1205,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Si vous êtes sûr que le poisson a été pêché dans le lac de droite, vous pouvez répondre&amp;#10;&quot;Je suis certain LAC DE DROITE&quot;." valType="str" updates="constant" name="text"/>
+        <Param val="If you are sure that the fish came from the right lake, you should click close to&amp;#10;&quot;I'm sure RIGHT LAKE&quot;." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1232,7 +1232,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Si vous êtes sûr que le poisson a été pêché dans le lac de gauche, vous pouvez répondre&amp;#10;&quot;Je suis certain LAC DE GAUCHE&quot;." valType="str" updates="constant" name="text"/>
+        <Param val="If you are sure that the fish came from the left lake, you should click close to&amp;#10;&quot;I'm sure LEFT LAKE&quot;." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1259,7 +1259,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Maintenant, si vous pensez que le poisson vient du lac de droite mais que des doutes persistent, vous pouvez répondre comme ceci:" valType="str" updates="constant" name="text"/>
+        <Param val="Now, if you think that the fish came from the right lake, but you have doubts, you can answer like this:" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1286,7 +1286,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="De la même manière, si vous pensez que le poisson vient du lac de gauche mais que des doutes persistent, vous pouvez répondre comme ceci:" valType="str" updates="constant" name="text"/>
+        <Param val="Similarly, if you think that the fish came from the left lake, but you have doubts, you can answer like this:" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1330,7 +1330,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Prenons un autre exemple.&amp;#10;&amp;#10;Si le pêcheur passe plus de temps sur le lac de gauche, comme indiqué ici" valType="str" updates="constant" name="text"/>
+        <Param val="Let's look at another example.&amp;#10;&amp;#10;If the fisher spent more time to fish at the left lake as shown here" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1415,7 +1415,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="... et qu'il y a autant de poissons rouges et noirs dans le lac de droite que dans le lac de gauche" valType="str" updates="constant" name="text"/>
+        <Param val="...and there are as many red and black fish in the left lake as in the right one" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1500,7 +1500,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Quelle est votre degré de certitude sur l'origine du poisson rouge fraîchement pêché ?" valType="str" updates="constant" name="text"/>
+        <Param val="What is your confidence about the fish's lake of origin?" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1556,7 +1556,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Appuyez sur la barre espace pour continuer" valType="str" updates="constant" name="text"/>
+        <Param val="Press Space to proceed" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1641,7 +1641,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Utilisez bien toute&amp;#10; l'échelle !" valType="str" updates="constant" name="text"/>
+        <Param val="Use the whole scale!" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1697,7 +1697,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Bravo !" valType="str" updates="constant" name="text"/>
+        <Param val="Well done!" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1759,7 +1759,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Si vous avez compris les consignes de l'expérience, cliquez avec votre souris pour démarrer la phase d'entraînement.&amp;#10;&amp;#10;Sinon, appuyez sur la barre espace pour lire les consignes une nouvelle fois." valType="str" updates="constant" name="text"/>
+        <Param val="If you understood the instructions click with your mouse to proceed to some training trials.&amp;#10;&amp;#10;Otherwise, press Space to see the instructions again." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1840,7 +1840,7 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="L'entraînement est terminé.&amp;#10;&amp;#10;Appuyez sur la barre espace lorsque vous êtes prêt à démarrer l'expérience." valType="str" updates="constant" name="text"/>
+        <Param val="Training trials are over.&amp;#10;&amp;#10;Press Space when you are ready to proceed to the main experiment." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1886,7 +1886,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Rappel: merci de ne pas presser la touche Esc.&amp;#10;Si vous le faisiez par erreur, utilisez F11 pour revenir en mode plein-écran (sous Windows)." valType="str" updates="constant" name="text"/>
+        <Param val="Reminder: Please do not press Esc at any point, because it will exit fullscreen.&amp;#10;If you do, please press F11 to come back to fullscreen (Windows)." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1930,7 +1930,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Souvenez vous de bien utiliser toute l'échelle pour répondre !" valType="str" updates="constant" name="text"/>
+        <Param val="Please remember to use the whole scale!" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -1975,7 +1975,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="L'expérience est terminée.&amp;#10;Merci de votre participation." valType="str" updates="constant" name="text"/>
+        <Param val="The experiment is now over, thank you for taking part." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -2021,7 +2021,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Appuyez sur la barre espace pour sortir" valType="str" updates="constant" name="text"/>
+        <Param val="Press Space to proceed" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -2364,7 +2364,7 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Je suis certain&amp;#10;LAC DE DROITE" valType="str" updates="constant" name="text"/>
+        <Param val="I'm sure&amp;#10;RIGHT LAKE" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -2391,7 +2391,7 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Je suis certain&amp;#10;LAC DE GAUCHE" valType="str" updates="constant" name="text"/>
+        <Param val="I'm sure&amp;#10;LEFT LAKE" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -2418,7 +2418,7 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Je ne sais pas" valType="str" updates="constant" name="text"/>
+        <Param val="I don't know" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
@@ -2544,7 +2544,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Appuyez sur la barre espace pour continuer" valType="str" updates="constant" name="text"/>
+        <Param val="Press Space to proceed" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
@@ -2570,7 +2570,7 @@
     <LoopTerminator name="instructions"/>
     <LoopInitiator loopType="TrialHandler" name="trials_3">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'Consigne': '1) Commençons à utiliser les poissons rouges et noirs dans les lacs pour prendre une décision', 'TrainingFile': 'TrainingFiles/Training1.xlsx'}, {'Consigne': '2) Bravo ! Utilisons maintenant le temps passé à pêcher à droite ou à gauche pour prendre une décision', 'TrainingFile': 'TrainingFiles/Training2.xlsx'}, {'Consigne': '3) Bravo ! Pour finir, essayez maintenant de combiner ces deux informations pour prendre votre décision', 'TrainingFile': 'TrainingFiles/Training3.xlsx'}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'Consigne': &quot;1) Let's start using red and back fishes in the lakes to make a decision&quot;, 'TrainingFiles': 'TrainingFiles/Training1.xlsx'}, {'Consigne': &quot;2) Well done! Now, let's use the time spent fishing in the right or left lake to reach a decision&quot;, 'TrainingFiles': 'TrainingFiles/Training2.xlsx'}, {'Consigne': &quot;3) Well done! Finally, let's try to combine these two pieces of information to make your decision&quot;, 'TrainingFiles': 'TrainingFiles/Training3.xlsx'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="TrainingFiles/TrainingInstructions.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
@@ -2586,7 +2586,7 @@
       <Param name="conditionsFile" updates="None" val="$TrainingFile" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
-      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="loopType" updates="None" val="fullRandom" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="code"/>
       <Param name="name" updates="None" val="training" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
@@ -2598,7 +2598,7 @@
     <Routine name="toExperiment"/>
     <LoopInitiator loopType="TrialHandler" name="trials_2">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'Block': 1, 'Fichier': 'BlocsConditions/Bloc1.xlsx'}, {'Block': 2, 'Fichier': 'BlocsConditions/Bloc2.xlsx'}, {'Block': 3, 'Fichier': 'BlocsConditions/Bloc3.xlsx'}, {'Block': 4, 'Fichier': 'BlocsConditions/Bloc4.xlsx'}, {'Block': 5, 'Fichier': 'BlocsConditions/Bloc5.xlsx'}, {'Block': 6, 'Fichier': 'BlocsConditions/Bloc6.xlsx'}, {'Block': 7, 'Fichier': 'BlocsConditions/Bloc7.xlsx'}, {'Block': 8, 'Fichier': 'BlocsConditions/Bloc8.xlsx'}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'Blockk': 1, 'Fichier': 'BlockFiles/Block1.xlsx'}, {'Blockk': 2, 'Fichier': 'BlockFiles/Block2.xlsx'}, {'Blockk': 3, 'Fichier': 'BlockFiles/Block3.xlsx'}, {'Blockk': 4, 'Fichier': 'BlockFiles/Block4.xlsx'}, {'Blockk': 5, 'Fichier': 'BlockFiles/Block5.xlsx'}, {'Blockk': 6, 'Fichier': 'BlockFiles/Block6.xlsx'}, {'Blockk': 7, 'Fichier': 'BlockFiles/Block7.xlsx'}, {'Blockk': 8, 'Fichier': 'BlockFiles/Block8.xlsx'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="BlockFiles/BlockConditions.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
